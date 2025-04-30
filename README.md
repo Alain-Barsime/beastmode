@@ -6,9 +6,9 @@ A real-time chat application built using the MERN stack (MongoDB, Express.js, Re
 - User authentication (register/login)
 - Real-time messaging using WebSockets
 - Real-time video-calls using webRTC
-- Chat rooms or private messaging
+- Private messaging
 - Responsive UI
-- Emoji and media support (optional)
+- Emoji and media support 
 
 ## 🛠️ Tech Stack
 - **Frontend:** React, CSS
