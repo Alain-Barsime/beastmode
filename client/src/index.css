@@ -1,0 +1,949 @@
+.registerDiv {
+  width:500px;
+  height:350px;
+  background-color:rgb(255, 255, 255);
+  box-shadow:0px 0px 5px 0px  black;
+  margin:auto;
+  border-radius:15px;
+  margin-top:50vh;
+  transform: translateY(-50%);
+  padding-top:15px;
+
+ 
+
+}
+.h1 {
+  margin-left:50%;
+  transform:translateX(-50%);
+  color:blue;
+}
+
+label {
+  font-weight: 800;
+  margin-left:5%;
+  font-size:20px;
+}
+.inputReg {
+  width:90%;
+  margin-left:5%;
+  height:40px;
+  font-size: larger;
+  border-color: black;
+  cursor:pointer;
+  border-width:2px;
+  padding:5px;
+  margin-left:25px;
+  border-width:2px;
+  border-radius:5px;
+ 
+}
+.buttonSubmit {
+  width:90%;
+  margin-left:5%;
+  height:45px;
+  border-radius:5px;
+  font-size: larger;
+  border-color: black;
+  background-color:rgb(41, 41, 250);
+  color:white;
+  cursor:pointer;
+  border-width:2px;
+}
+
+.loginOrRegister {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding-top:10px;
+  font-size:20px;
+  
+}
+
+.togglePurpose {
+  color:rgb(0, 0, 255);
+  border:none;
+  cursor:pointer;
+  font-size: 20px;
+}
+
+
+@media (orientation: landscape){
+.right-div {
+  flex:1;
+  height:100vh;
+
+}
+.left-div {
+  display:flex;
+  flex:2;
+  height:100vh;
+  padding: 0vh 0vh 3vh;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height:15vh;
+  flex:1;
+  border-bottom:1px solid rgba(220, 220, 220, 0.8);
+  border-right:1px solid rgba(220, 220, 220, 0.8);
+}
+.userDiv {
+  padding:30px;
+  padding-right:15px;
+  flex:1;
+  height:85vh;
+  border-right:1px solid rgba(220, 220, 220, 0.8);
+  overflow-y: auto;
+}
+
+.logo {
+  height:7vh;
+  flex:0.5;
+  cursor: pointer;
+  
+}
+.userMain {
+  display: flex;
+  flex:0.99;
+  height:11vh;
+  background-color: rgb(207, 207, 207);
+  border-radius:1vh;
+  align-items: center;
+  padding:0px 2vh;
+  justify-content: space-between;
+  margin-top:2vh;
+  cursor:pointer;
+}
+
+.profile {
+  height:8vh;
+  width:8vh;
+  display: flex;
+  border-radius:50%;
+  background-color: rgb(107, 231, 107);
+  align-items: center;
+  justify-content: center;
+  font-size:25px;
+}
+
+.userName {
+  font-size: 3vh;
+}
+
+
+.nameStatus {
+  display: flex;
+  align-items: center;
+  flex:0.5;
+  justify-content: space-between;
+}
+
+}
+
+.loading {
+  margin:auto;
+  font-size:27px;
+}
+
+.whole-you {
+  width:fit-content;
+  height:fit-content;
+  display:flex;
+  gap:1vh;
+  margin-left:2vh;
+  margin-top:0.8vh;
+}
+
+
+
+
+.you-sent {
+  width:fit-content;
+  height:fit-content;
+  background-color: blue;
+  border-radius: 10px 10px 10px 0px;
+  margin-top:1vh;
+  font-size:2.8vh;
+  padding: 0px 2px;
+  
+
+}
+
+.you-sent a{
+  color:#1f1f1f;
+
+}
+
+body.dark-mode .you-sent a{
+  color:rgb(161, 161, 161);
+}
+.senderProf {
+  width:7vh;
+  height:7vh;
+  border-radius: 50%;
+  font-size:4vh;
+  background-color:rgb(107, 231, 107);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body.dark-mode .senderProf {
+  background-color:rgb(26, 77, 26);
+}
+
+.senderProf img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit: cover;
+  margin:0px;
+}
+
+.me-sent {
+  margin-left:auto;
+  margin-right:2h;
+  width:fit-content;
+  height:fit-content;
+  background-color: blue;
+  border-radius: 10px 10px 0px 10px;
+  margin-top:1vh;
+  font-size:2.8vh;
+  padding: 0.5vh 1vh;
+  margin-right:1vh;
+  margin-top:0.8vh;
+
+}
+.me-sent a{
+  color:#1f1f1f;
+}
+body.dark-mode .me-sent a{
+  color:rgb(161, 161, 161);
+}
+
+.me-sent p,.whole-you p {
+  margin:1vh;
+
+} 
+
+.userChat {
+  height:25vh;
+  width:55vh;
+  margin:12vh auto;
+  font-size:3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+ 
+
+
+}
+
+.profile-chatter {
+  height: 60vh;
+  border-radius:50%;
+  width:35%;
+
+}
+
+.sendMessage {
+  width:90%;
+  height:8vh;
+  display: flex;
+  align-items: center;
+  margin:auto auto 0vh;
+  
+
+}
+
+.sendMessage button {
+  height:85%;
+  width:6.8vh;
+  border-radius:50%;
+  border:none;
+  background-color:rgb(150, 150, 150); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sendMessage img {
+  height:75%;
+  width:75%;
+
+}
+.sendMessage input {
+  flex:1;
+  height:6vh;
+  border:3px solid black;
+  border-radius: 2vh;
+  font-size:20px;
+  padding:1vh 1vh;
+ 
+}
+
+.sendMessage button:nth-of-type(1) {
+  margin-right: 1vh; 
+  box-sizing: border-box;
+  overflow: hidden; 
+  padding: 0;     
+}
+
+.sendMessage button:nth-of-type(1) img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; 
+}
+
+
+.sendMessage button:nth-of-type(2) {
+  margin:0px 1vh;
+}
+.sendMessage button:nth-of-type(3) {
+  margin-left:3vh;
+}
+
+.sendMessage input:focus {
+  border-color:rgb(5, 5, 238);
+  border-width:4px;
+}
+.sendMessage button:hover {
+  background-color:rgb(121, 121, 121);
+}
+
+.navigator {
+  width:95%;
+  height:6vh;
+  border-radius:1.5vh;
+  box-shadow:0px 0px 5px 0px  black;
+  align-items: center;
+  display: flex;
+  justify-content: right;
+  padding-right:2vh;
+  gap:3vh;
+
+}
+.messageArea {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.navHolder {
+  width:100%;
+  height:10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:18px 5px 15px black;
+ z-index: 2;
+}
+
+.select-user {
+  height:30vh;
+  width:30vh;
+}
+.selectUser p{
+  font-size:4vh;
+  font-weight:550;
+
+}
+.selectUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-top:50vh;
+  transform: translateY(-50%);
+
+}
+
+.profilePic {
+  display: flex;
+  padding:0px;
+  border: none;
+  padding:0.2vh 1vh;
+  align-items: center;
+  justify-content: center;
+  border-radius:20%;
+  cursor:pointer;
+  border-radius:1vh;
+  
+}
+
+.profilePicHeader {
+  
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color:rgb(107, 231, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2.2vh;
+    text-transform: uppercase;
+    flex-shrink: 0; 
+}
+
+body.dark-mode .profilePicHeader {
+    background-color:rgb(26, 77, 26);
+}
+.profilePicHeader img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: center; 
+  display: block;
+}
+
+.profilePic p{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1;
+  margin-right:0.8vh;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 160px;
+}
+
+.dropdownMenu button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownMenu button:hover {
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.menuIcon {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+.profileWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+body.dark-mode button {
+  background-color: #1f1f1f;
+  color: #eaeaea;
+}
+
+body.dark-mode .dropdownMenu {
+  background-color: #222;
+  border: 1px solid #444;
+}
+
+body.dark-mode .userMain {
+  background-color:rgb(88, 88, 88);
+}
+body.dark-mode .profile {
+  background-color:rgb(26, 77, 26);
+}
+body.dark-mode .navigator {
+  background-color:rgb(88, 88, 88);
+}
+
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+body.dark-mode button {
+  background-color: #1f1f1f;
+  color: #eaeaea;
+}
+
+body.dark-mode .dropdownMenu {
+  background-color: #222;
+  border: 1px solid #444;
+}
+body.dark-mode .profilePic {
+  background-color:rgb(55, 55, 55);
+}
+
+body.dark-mode .sendMessage input {
+  background-color: #121212;
+  border-color:white;
+  color:white;
+  
+}
+body.dark-mode .dropdownMenu button {
+  background-color: rgb(40 40, 40);
+}
+body.dark-mode .dropdownMenu button:hover {
+  background-color: rgb(60 60, 60);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.userProfile {
+  height: 35vh;
+  width: 40vh;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;  
+  margin:1vh auto 10vh;
+  flex-direction: column;
+  font-size:3vh;
+  gap:2vh;
+}
+.userProfile p{
+  margin: 0vh;
+
+}
+
+.user-online {
+  height:2vh;
+  width:2vh;
+  border-radius:50%;
+  background-color:green;
+}
+.user-offline {
+  height:2vh;
+  width:2vh;
+  border-radius:50%;
+  background-color:rgb(110, 110, 110);
+}
+.photoHolder {
+  height: 27vh;
+  width:27vh;
+  border-radius:50%;
+  background-color:rgb(107, 231, 107);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  font-size:12vh;
+} 
+
+body.dark-mode .photoHolder {
+  background-color:rgb(26, 77, 26);
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
+  object-position: center; 
+  display: block;
+}
+
+.loggedInDiv {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:1.5vh;
+}
+.loggedInDiv p {
+  font-size:2.9vh;
+  }
+.loggedInDiv div {
+  height:1.5vh;
+  width:1.5vh;
+  border-radius:50%;
+  background-color:green;
+}
+
+
+
+.emoji-dropup {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  z-index: 999;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.emoji {
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.2);
+}
+
+.notificationBtn {
+  width:5.5vh;
+  height:5.5vh;
+  border-radius:50%;
+  border:none; 
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: transparent !important;
+  cursor: pointer;
+
+}
+
+.notificationBtn img{
+  width:5.5vh;
+  height:5.5vh;
+  border-radius:50%;
+}
+
+.notificationWrapper {
+  position: relative;
+}
+
+
+.notificationCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.notificationDropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: var(--dropdown-bg, white);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  z-index: 999;
+  width: 250px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.notificationItem {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.noNotifications {
+  padding: 10px;
+  text-align: center;
+  color: gray;
+}
+body.dark-mode .notificationDropdown,body.dark-mode .noNotifications {
+  background-color:rgb(88, 88, 88);
+  color:white;
+}
+
+.videoDiv {
+  height:5.5vh;
+  width: 5.5vh;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  padding:0px;
+  cursor: pointer;
+  border: none;
+  background-color:transparent;
+}
+.videoDiv img {
+  height:100%;
+  width:100%;
+  border-radius:50%;
+  margin:0px;
+}
+.targetRTC {
+  height:100vh;
+  width:100vw;
+  display: flex;
+  position: relative;
+}
+.sourceRTC {
+  height:35vh;
+  width:27vw;
+  margin:2vh 0vh 0vh 2vh;
+  border-radius:1vh;
+  box-shadow:0vh 0vh 0.5vh white;
+  position:absolute;
+}
+.streamTarget {
+  height:100%;
+  width:100%;
+  position:absolute;
+
+}
+.streamSource {
+  height:100%;
+  width:100%;
+  position:absolute;
+  z-index:2;
+}
+.hangupDiv {
+  width: 10vh;
+  height: 7vh;
+  background-color: red;
+  border-radius: 1vh;
+  z-index: 3;
+  position: absolute;
+  bottom: 2vh;  
+  left: 50%;  
+  transform: translateX(-50%); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:0vh 0vh 01vh white;
+  cursor: pointer;
+}
+
+.hangupDiv  img {
+  height: 85%;
+    
+}
+/* Basic layout for offer controls */
+.offerControls {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the buttons */
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 300px;
+  color: white;
+}
+
+
+.offerControls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  background-color: #4CAF50; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.offerControls button:hover {
+  background-color: #45a049;
+}
+
+.offerControls button:last-child {
+  background-color: #f44336; 
+}
+
+.offerControls button:last-child:hover {
+  background-color: #e53935;
+}
+
+
+.offerControls button:first-child {
+  margin-right: 10px;
+}
+
+.incomingCallPopup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  z-index: 1000;
+}
+.incomingCallPopup button {
+  margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
