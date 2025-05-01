@@ -6,7 +6,11 @@ const app = express();
 const server = http.createServer(app);
 
 const io = socketIo(server, {
-  cors: { origin: "*", methods: ["GET", "POST"] }
+  cors: { 
+  origin: "https://beastmode-pngx.onrender.com",
+  methods: ["GET", "POST"] ,
+  credentials: true
+}
 });
 
 const users = {};

@@ -42,6 +42,7 @@ app.use('/signaling', createProxyMiddleware({
   target:'https://beastmode-signaling.onrender.com',
   changeOrigin: true,
   pathRewrite: { '^/signaling': '' },
+  ws: true
 
 }))
 
