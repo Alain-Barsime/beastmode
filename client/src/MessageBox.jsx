@@ -23,7 +23,7 @@ import { UserContext } from "./UserContext"
 
 
   useEffect(()=>{
-    socketRef.current = new WebSocket(`ws://localhost:4040?userId=${id}`);
+    socketRef.current = new WebSocket(`wss://beastmode-main.onrender.com?userId=${id}`);
     socketRef.current.onopen =()=>{
       console.log('Websocket connection established');
     }
