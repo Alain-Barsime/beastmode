@@ -12,7 +12,7 @@ const UserList = ()=>{
     const userId = id;
 
     useEffect(()=>{
-        const socket = new WebSocket(`ws://localhost:4040?userId=${id}`);
+        const socket = new WebSocket(`wss://beastmode-main.onrender.com?userId=${id}`);
         socket.onopen = () => {
             socket.send(JSON.stringify({ type:'connect',userId})); 
         }
