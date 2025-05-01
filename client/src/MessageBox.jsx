@@ -13,7 +13,7 @@ import { UserContext } from "./UserContext"
 
   useEffect(()=>{
     if(receiverId !== null){
-      fetch(`http://localhost:4040/messages?receiverId=${receiverId}&senderId=${id}`) 
+      fetch(`https://beastmode-main.onrender.com/messages?receiverId=${receiverId}&senderId=${id}`) 
       .then(res => res.json())
       .then(data => setMessages(data))
       .catch(err => console.log(err)) 

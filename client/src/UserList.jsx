@@ -40,7 +40,7 @@ const UserList = ()=>{
 
 
     useEffect(() => {
-        fetch(`http://localhost:4040/data?userId=${id}`)
+        fetch(`https://beastmode-main.onrender.com/data?userId=${id}`)
             .then(res => res.json())
             .then(data => setUsers(data))
             .catch(err => console.log(err)); 

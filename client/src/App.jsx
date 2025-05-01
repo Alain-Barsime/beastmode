@@ -6,7 +6,7 @@ import Routes from "./routes"
 
 function App() {
 
-  axios.defaults.baseURL = 'http://localhost:4040';
+  axios.defaults.baseURL = 'https://beastmode-main.onrender.com';
   axios.defaults.withCredentials = true;  
   
 

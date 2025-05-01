@@ -53,7 +53,7 @@ export function UserContextProvider({ children }) {
 
   const fetchAndSetProfilePic = async (id, setProfilePic) => {
     try {
-      const res = await fetch(`http://localhost:4040/user/${id}`);
+      const res = await fetch(`https://beastmode-main.onrender.com/user/${id}`);
       if (res.ok) {
         const data = await res.json();
         setProfilePic(data.profilePic);

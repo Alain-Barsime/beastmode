@@ -22,7 +22,7 @@ export default function Video() {
     console.log("[Video.jsx] useEffect triggered with id:", id, "receiverId:", receiverId);
 
     // 1) Initialize socket and peer connection
-    socket.current = io("http://localhost:5000");
+    socket.current = io("https://beastmode-main.onrender.com/signaling");
     socket.current.emit("register", id);
     console.log("[Socket] Connected to signaling server");
 

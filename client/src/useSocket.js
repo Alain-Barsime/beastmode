@@ -5,7 +5,7 @@ export const useSocket = (id) => {
   const socket = useRef(null);
 
   useEffect(() => {
-    socket.current = io("http://localhost:5000");
+    socket.current = io("https://beastmode-main.onrender.com/signaling");
 
     if (id) {
       socket.current.emit("register", id);

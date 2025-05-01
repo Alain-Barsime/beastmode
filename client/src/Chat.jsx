@@ -92,7 +92,7 @@ export default function Chat(){
 
       const handleLogout = async () => {
         try {
-          const response = await fetch('http://localhost:4040/logout', {
+          const response = await fetch('https://beastmode-main.onrender.com/logout', {
             method: 'GET',
             credentials: 'include', 
           });
@@ -125,7 +125,7 @@ export default function Chat(){
       
           try {
         
-            const response = await fetch(`http://localhost:4040/upload?userId=${id}`, {
+            const response = await fetch(`https://beastmode-main.onrender.com/upload?userId=${id}`, {
               method: "POST",
               body: formData,
             });
@@ -213,7 +213,7 @@ export default function Chat(){
         formData.append("receiverId", receiverId);  
       
         try {
-          const res = await fetch("http://localhost:4040/send-file", {
+          const res = await fetch("https://beastmode-main.onrender.com/send-file", {
             method: "POST",
             body: formData,
           });
@@ -275,7 +275,7 @@ export default function Chat(){
 
 
       useEffect(() => {
-        socket.current = io("http://localhost:5000"); 
+        socket.current = io("https://beastmode-main.onrender.com/signaling"); 
 
         socket.current.emit("register", id);
       
