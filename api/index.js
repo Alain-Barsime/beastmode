@@ -1,4 +1,5 @@
 const express = require('express');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 const http = require('http');
 const cors = require('cors');
@@ -37,9 +38,17 @@ app.use(cors({
     origin: process.env.CLIENT_URL,
 }));
 
+app.use('signaling', createProxyMiddleware({
+  target:'https://beastmode-signaling.onrender.com',
+  changeOrigin: true,
+  pathRewrite: { '^/signaling': '' },
+
+}))
+
 const User = require('./models/user');
 const Message = require('./models/message');
 const jwt = require('jsonwebtoken');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
 
