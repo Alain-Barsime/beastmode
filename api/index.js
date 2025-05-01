@@ -42,11 +42,10 @@ app.use('/signaling', createProxyMiddleware({
   target:'https://beastmode-signaling.onrender.com',
   changeOrigin: true,
   pathRewrite: { '^/signaling': '' },
-  ws: true
 
 }))
 
-const User = require('./models/user');
+const User = require('./models/user')
 const Message = require('./models/message');
 const jwt = require('jsonwebtoken');
 const jwtSecret = process.env.JWT_SECRET;
