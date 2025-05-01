@@ -38,7 +38,7 @@ app.use(cors({
     origin: process.env.CLIENT_URL,
 }));
 
-app.use('signaling', createProxyMiddleware({
+app.use('/signaling', createProxyMiddleware({
   target:'https://beastmode-signaling.onrender.com',
   changeOrigin: true,
   pathRewrite: { '^/signaling': '' },
