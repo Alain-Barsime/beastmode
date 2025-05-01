@@ -48,7 +48,6 @@ app.use('signaling', createProxyMiddleware({
 const User = require('./models/user');
 const Message = require('./models/message');
 const jwt = require('jsonwebtoken');
-const { createProxyMiddleware } = require('http-proxy-middleware');
 const jwtSecret = process.env.JWT_SECRET;
 const bcryptSalt = bcrypt.genSaltSync(10);
 
